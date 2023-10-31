@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+    <title>SAINT LAURENT</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function isMobile() {
+        var UserAgent = navigator.userAgent;
+        if (
+          UserAgent.match(
+            /iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+          ) != null ||
+          UserAgent.match(/LG|SAMSUNG|Samsung/) != null
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      if (isMobile()) {
+        location.href = "./mobile/index.html"; //모바일페이지
+      } else {
+        location.href = "./pc/index.html"; //PC용 페이지
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+// .contents {
+//   height: 300px;
+// }
+
+#main {
+  width: 100%;
+  height: auto;
+}
+.goods_inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+.goods_lst {
+  width: 76%;
+  height: 100%;
+
+  .box1,
+  .box3,
+  .box5,
+  .box7 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+
+    .box-wrap {
+      width: 33.333%;
+      position: relative;
+    }
+  }
+  .hoverbox {
+    background-color: #0f0f0f;
+    opacity: 0.8;
+  }
+  .text1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 15px;
+    p {
+      font-weight: 200;
+      color: #fff;
+    }
+    .color {
+      display: flex;
+      justify-content: center;
+      // flex-wrap: wrap;
+      opacity: 10;
+      .color_bk {
+        width: 35px;
+        height: 10px;
+        background-color: $b;
+        border: 1px solid $w;
+      }
+      .color_bk2 {
+        width: 35px;
+        height: 10px;
+        background-color: $b;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_br {
+        width: 35px;
+        height: 10px;
+        background-color: #41220b;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_mr {
+        width: 35px;
+        height: 10px;
+        background-color: #632e08;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_gr {
+        width: 35px;
+        height: 10px;
+        background-color: #919191;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_pinkg {
+        width: 35px;
+        height: 10px;
+        background-color: #9b7c7c;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_blueg {
+        width: 35px;
+        height: 10px;
+        background-color: #646883;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_yn {
+        width: 35px;
+        height: 10px;
+        background-color: #2c1015;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_or {
+        width: 35px;
+        height: 10px;
+        background-color: #812f09;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_w {
+        width: 35px;
+        height: 10px;
+        background-color: $w;
+        border: 1px solid $b;
+        margin-right: 3px;
+      }
+      .color_yl {
+        width: 35px;
+        height: 10px;
+        background-color: #b47500;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+      .color_be {
+        width: 35px;
+        height: 10px;
+        background-color: #a79166;
+        border: 1px solid $w;
+        margin-right: 3px;
+      }
+    }
+  }
+  .box2 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 30vw;
+    margin-bottom: 20px;
+    .box2-1 {
+      position: relative;
+      width: 30%;
+      &:hover {
+        .text1 {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+    .box2-2 {
+      position: relative;
+      width: 70%;
+      &:hover {
+        .text1 {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .box4 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 30vw;
+    margin-bottom: 20px;
+    .box4-1 {
+      position: relative;
+      width: 70%;
+      &:hover {
+        .text1 {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+    .box4-2 {
+      position: relative;
+      float: left;
+      width: 30%;
+      &:hover {
+        .text1 {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .box6 {
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+    &:hover {
+      .text1 {
+        display: flex;
+        width: 100%;
+      }
+    }
+  }
+}
+.box-wrap:hover {
+  .text1 {
+    display: flex;
+  }
+}
